@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;1,300;1,700&display=swap');
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 2em 0;
+}
+
+.main-header {
+    color: hsl(0, 0%, 59%);
+    font-family: inherit;
+    font-weight: 300;
+    margin-top: -0.25em;
+}
+
+.sub-header{
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+}
+
+.soon {
+    color: black;
+    font-weight: 700;
+}
+
+#form {
+    padding-bottom: 4em;
+}
+
+#email-input {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    font-weight: 600;
+    height: 4em;
+    margin-right: 1em;
+    width: 35em;
+}
+
+#email-input:invalid {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+#email-input::placeholder {
+    color: hsl(223, 100%, 88%);
+    padding-left: 2em;
+}
+
+#error-msg {
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 5px 0 10px 0;
+ 
+}
+
+#error-msg.visible {
+    display: block;
+}
+
+#btn {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 30px;
+    box-shadow:3px 3px 5px 1px #ccc;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    height: 3em;
+    width: 10em;
+}
+
+#btn:hover {
+    background-color: hsl(223, 64%, 73%);
+}
+
+.illustration {
+    height: 25em;
+    width: 35em;
+    padding-left: 18em;
+}
+
+.icons {
+    padding: 3em 0 1em 0;
+}
+
+.fa-brands {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 100%;
+    color:hsl(223, 87%, 63%);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.fa-brands.fa-twitter  {
+    margin: 0 1em;
+}
+
+.fa-brands:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+/* FOOTER */
+.attribution { 
+    color: hsl(0, 0%, 59%);
+    font-size: 11px; 
+    font-weight: 300;
+    text-align: center; 
+}
+.attribution a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(223, 87%, 63%);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 1em;
+    }
+
+    #email-input {
+        width: 30em;
+        margin-bottom: 20px;
+    }
+
+    #error-msg {
+        padding-top: 1px;
+        padding-bottom: 2em;
+    }
+
+    #btn {
+        width: 20em;
+    }
+
+    .illustration {
+        height: 300px;
+        padding-left: 0;
+        width: 450px;
+    }
+}
+
+
+
+
